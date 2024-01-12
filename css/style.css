@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* heading */
+/* ----------------------------------- */
+
+/* header heading */
+/* logo */
+.heading {
+  background-color: #333333;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid grey;
+  display: flex;
+}
+
+.heading .logo {
+  background-image: url(https://i.pinimg.com/736x/08/87/4a/08874aa2406f0be638bfb46103a54738.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  width: 6em;
+  height: 30px;
+}
+
+/* parts */
+.heading .parts {
+  margin: 5px 60px 0 auto;
+  display: flex;
+  gap: 50px;
+}
+
+.heading .parts a {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.heading .parts a::after {
+  background-color: #ffffff;
+  content: "";
+  width: 0;
+  height: 1px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+  transform: translate(-50%, 0%);
+  left: 50%;
+}
+
+.heading .parts a:hover::after {
+  width: 100%;
+}
