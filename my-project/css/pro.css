@@ -21,7 +21,7 @@ html {
   height: 60px;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -78,7 +78,6 @@ html {
 /* intro */
 .intro {
   width: 100%;
-  margin-top: 50px;
   overflow: hidden;
   position: relative;
 }
