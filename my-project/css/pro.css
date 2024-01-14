@@ -62,7 +62,7 @@ html {
   height: 60px;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -533,10 +533,67 @@ footer ul li a {
 /* --------------------------------------------------------- */
 /* responsive */
 
+/*.plot,.main-characters,.stages,.fun-fact, .review,footer    */
+
+@media screen and (max-width: 1399px) {
+  .intro .content img {
+    width: 40%;
+  }
+  .intro .content h1 {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (max-width: 1199px) {
+  .plot,
+  .main-characters,
+  .stages,
+  .fun-fact,
+  .review,
+  footer {
+    padding: 50px;
+  }
+
+  .intro .content {
+    left: 50px;
+  }
+  .intro .content h1 {
+    font-size: 2.5rem;
+  }
+  .intro .content p {
+    max-width: 70%;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .plot,
+  .main-characters,
+  .stages,
+  .fun-fact,
+  .review,
+  footer {
+    padding: 30px;
+  }
+
+  .header-page .logo {
+    width: 90px;
+  }
+  .intro .content {
+    width: 75%;
+    gap: 15px;
+    left: 30px;
+  }
+  .intro .content img {
+    width: 35%;
+  }
+  .intro .content h1 {
+    font-size: 2rem;
+  }
+  .intro .content p {
+    max-width: 75%;
+    font-size: 0.5rem;
+  }
   /* các nút đóng mở header */
   .header-page .btn-bar {
     display: block;
@@ -550,7 +607,7 @@ footer ul li a {
   .header-page .parts {
     background-color: rgba(0, 0, 0, 0.849);
     width: 50%;
-    height: 500px;
+    height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -558,7 +615,7 @@ footer ul li a {
     position: absolute;
     top: 0;
     transform: translate(-100%, 0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .header-page .parts {
@@ -576,7 +633,49 @@ footer ul li a {
 }
 
 @media screen and (max-width: 767px) {
+  .header-page .logo {
+    width: 80px;
+  }
+  .intro .content {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .intro .content img {
+    width: 25%;
+  }
+  .intro .content h1 {
+    font-size: 1.8rem;
+  }
+  .intro .content p {
+    font-size: 0.5rem;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .header-page .logo {
+    width: 60px;
+  }
+  .intro .content {
+    left: 10px;
+  }
+  .intro .content img {
+    width: 18%;
+  }
+  .intro .content h1 {
+    max-width: 60%;
+    font-size: 1.3rem;
+  }
+  .intro .content p {
+    max-width: 80%;
+    font-size: 5px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .intro .content p {
+    display: none;
+  }
 }
