@@ -734,10 +734,10 @@ footer ul li a {
     font-size: 1rem;
   }
   /* main characters */
-  .main-characters .good-side .main .main-good,
+  /* .main-characters .good-side .main .main-good,
   .main-characters .bad-side .main .main-bad {
     width: calc((100% / 1) - 5px);
-  }
+  } */
 }
 
 @media screen and (max-width: 435px) {
