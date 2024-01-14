@@ -9,11 +9,11 @@
 }
 
 .col-1 {
-  --column-size: 4;
+  --column-size: 5;
 }
 
 .col-2 {
-  --column-size: 8;
+  --column-size: 5;
 }
 
 @media screen and (max-width: 1399px) {

@@ -372,10 +372,6 @@ html {
   gap: 20px;
 }
 
-.stages .part:nth-child(odd) .content {
-  flex-direction: row-reverse;
-}
-
 .stages .part .content .para {
   width: 60%;
   color: var(--text-color-blur);
@@ -584,6 +580,21 @@ footer ul li a {
   .main-characters .good-side .main .main-good,
   .main-characters .bad-side .main .main-bad {
     width: calc((100% / 3) - 5px);
+  }
+
+  /* stages */
+  .stages .part .content {
+  }
+  .stages .part .content .para {
+    width: 100%;
+  }
+
+  .stages .part .content {
+    flex-direction: column;
+  }
+
+  .stages .part .content img {
+    width: 90%;
   }
 }
 
