@@ -553,6 +553,10 @@ footer ul li a {
     width: 30%;
     margin: 10px;
   }
+  /* main characters */
+  .main-characters h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -564,7 +568,7 @@ footer ul li a {
   footer {
     padding: 50px;
   }
-
+  /* intro */
   .intro .content {
     left: 50px;
   }
@@ -574,6 +578,12 @@ footer ul li a {
   .intro .content p {
     max-width: 70%;
     font-size: 1rem;
+  }
+
+  /* main characters */
+  .main-characters .good-side .main .main-good,
+  .main-characters .bad-side .main .main-bad {
+    width: calc((100% / 3) - 5px);
   }
 }
 
@@ -639,6 +649,12 @@ footer ul li a {
   #parts:checked + .btn-bar + .parts {
     display: flex;
   }
+
+  /* main characters */
+  .good-side h3,
+  .bad-side h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -670,6 +686,16 @@ footer ul li a {
   .plot .sub-img {
     width: 40%;
   }
+  /* main characters */
+  .main-characters .good-side .main .main-good,
+  .main-characters .bad-side .main .main-bad {
+    width: calc((100% / 2) - 5px);
+  }
+  .main-characters .good-side .main .main-good .name,
+  .main-characters .bad-side .main .main-bad .name {
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -695,6 +721,11 @@ footer ul li a {
   .plot .para {
     line-height: 30px;
     font-size: 1rem;
+  }
+  /* main characters */
+  .main-characters .good-side .main .main-good,
+  .main-characters .bad-side .main .main-bad {
+    width: calc((100% / 1) - 5px);
   }
 }
 
