@@ -581,18 +581,16 @@ footer ul li a {
   }
   .intro .content {
     width: 75%;
-    gap: 15px;
     left: 30px;
   }
   .intro .content img {
-    width: 35%;
+    display: none;
   }
   .intro .content h1 {
     font-size: 2rem;
   }
   .intro .content p {
-    max-width: 75%;
-    font-size: 0.5rem;
+    max-width: 50%;
   }
   /* các nút đóng mở header */
   .header-page .btn-bar {
@@ -638,7 +636,7 @@ footer ul li a {
   }
   .intro .content {
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
 
   .intro .content img {
@@ -648,7 +646,6 @@ footer ul li a {
     font-size: 1.8rem;
   }
   .intro .content p {
-    font-size: 0.5rem;
     line-height: 20px;
   }
 }
@@ -657,25 +654,29 @@ footer ul li a {
   .header-page .logo {
     width: 60px;
   }
+
   .intro .content {
-    left: 10px;
+    gap: 15px;
   }
   .intro .content img {
     width: 18%;
   }
   .intro .content h1 {
-    max-width: 60%;
+    max-width: 70%;
     font-size: 1.3rem;
   }
   .intro .content p {
-    max-width: 80%;
-    font-size: 5px;
+    font-size: 16px;
     line-height: 15px;
   }
 }
 
 @media screen and (max-width: 435px) {
+  .intro .content h1 {
+    max-width: 80%;
+  }
   .intro .content p {
-    display: none;
+    max-width: 70%;
+    font-size: 12px;
   }
 }
