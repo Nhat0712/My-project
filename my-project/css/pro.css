@@ -536,11 +536,22 @@ footer ul li a {
 /*.plot,.main-characters,.stages,.fun-fact, .review,footer    */
 
 @media screen and (max-width: 1399px) {
+  /* intro */
   .intro .content img {
     width: 40%;
   }
   .intro .content h1 {
     font-size: 3rem;
+  }
+
+  /* plot */
+  .plot h2 {
+    font-size: 2.5rem;
+  }
+
+  .plot .sub-img {
+    width: 30%;
+    margin: 10px;
   }
 }
 
@@ -631,14 +642,16 @@ footer ul li a {
 }
 
 @media screen and (max-width: 767px) {
+  /* header */
   .header-page .logo {
     width: 80px;
   }
+
+  /* intro */
   .intro .content {
     width: 100%;
     gap: 20px;
   }
-
   .intro .content img {
     width: 25%;
   }
@@ -648,13 +661,21 @@ footer ul li a {
   .intro .content p {
     line-height: 20px;
   }
+
+  /* plot */
+
+  .plot h2 {
+    padding-bottom: 40px;
+  }
+  .plot .sub-img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .header-page .logo {
     width: 60px;
   }
-
   .intro .content {
     gap: 15px;
   }
@@ -669,6 +690,12 @@ footer ul li a {
     font-size: 16px;
     line-height: 15px;
   }
+
+  /* plot */
+  .plot .para {
+    line-height: 30px;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 435px) {
@@ -678,5 +705,10 @@ footer ul li a {
   .intro .content p {
     max-width: 70%;
     font-size: 12px;
+  }
+  /* plot */
+  .plot h2 {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
   }
 }
