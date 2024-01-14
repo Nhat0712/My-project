@@ -1,0 +1,41 @@
+:root {
+  --container-width: 100%;
+  --grid-column: 12;
+}
+
+[class^="col-"] {
+  flex-basis: calc(100% / (var(--grid-column) / var(--column-size)));
+  max-width: calc(100% / (var(--grid-column) / var(--column-size)));
+}
+
+.col-1 {
+  --column-size: 4;
+}
+
+.col-2 {
+  --column-size: 8;
+}
+
+@media screen and (max-width: 1399px) {
+  .col-xxl-1 {
+    --column-size: 5;
+  }
+
+  .col-xxl-2 {
+    --column-size: 7;
+  }
+}
+
+/* @media screen and (max-width: 1199px) {
+  .col-xl-1 {
+    --column-size: 12;
+  }
+
+  .col-xl-2 {
+    --column-size: 12;
+  }
+
+  .stages .part .content .para {
+    max-width: 100%;
+  }
+} */

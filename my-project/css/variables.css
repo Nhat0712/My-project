@@ -1,4 +1,5 @@
 :root {
+  --text-color-blur: rgba(255, 255, 255, 0.875);
   --text-color: #fff;
   --letter-shadow: 0 0 10px white;
   --title-shadow: 0 0 3px white;

@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/grid-pro.css" />
     <link rel="stylesheet" href="./css/pro.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <!-- font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- font letter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- favicon -->
     <link
       rel="icon"
       href="https://i.pinimg.com/564x/3a/d2/bb/3ad2bb0fe7de49af2b94b29b383a495c.jpg"
@@ -20,6 +28,9 @@
   </head>
   <body>
     <div class="wrap"></div>
+
+    <!-- home icon -->
+    <a class="back-home" href="#"><i class="fa-solid fa-angles-up"></i></a>
     <!-- ----------------------------------------------- -->
     <!-- header -->
     <header class="header-page">
@@ -29,16 +40,25 @@
           alt=""
         />
       </div>
+
+      <!-- btn bar -->
+      <input type="checkbox" name="parts" id="parts" hidden />
+      <label class="btn-bar" for="parts"
+        ><i class="fa-solid fa-bars-staggered"></i
+      ></label>
+
       <!-- nav header -->
       <nav class="parts">
+        <label for="parts" class="btn-close">
+          <i class="fa-solid fa-xmark"></i
+        ></label>
         <a href="#plot">Cốt truyện</a>
         <a href="#characters">Nhân vật</a>
-        <a href="#">Các giai đoạn</a>
-        <a href="#">Có thể bạn chưa biết</a>
+        <a href="#stages">Các giai đoạn</a>
+        <a href="#fun-fact">Có thể bạn chưa biết</a>
       </nav>
     </header>
-
-    <!-- ----------------------------------------------- -->
+    <!------------------------------------------------- -->
     <!-- intro -->
     <div class="intro">
       <div class="content">
@@ -66,7 +86,7 @@
       <!-- ----------------------------------------------- -->
       <!-- plot -->
       <div id="plot" class="plot">
-        <h2>Cốt truyện</h2>
+        <h2>- Cốt truyện -</h2>
         <span class="sub-img">
           <img
             src="https://i.pinimg.com/564x/0c/ba/c1/0cbac1df1103c44ee15d5384813f921a.jpg"
@@ -150,138 +170,502 @@
       <!-- main characters -->
 
       <div id="characters" class="main-characters">
-        <h2>Các nhánh nhân vật chính</h2>
+        <h2>- Các nhánh nhân vật chính -</h2>
 
         <!-- good side -->
         <section class="good-side">
-          <h3>1. Chính diện</h3>
-          <div class="main">
-            <!-- --- -->
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/39/7f/0a/397f0af261f6ed134f1d27aa4a7571dc.jpg"
-                alt=""
-              />
-              <p class="name">Kamado Tanjiro</p>
-            </section>
+          <div class="coating">
+            <h3>1. Thợ săn quỷ</h3>
+            <div class="main">
+              <!-- --- -->
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/39/7f/0a/397f0af261f6ed134f1d27aa4a7571dc.jpg"
+                  alt=""
+                />
+                <p class="name">Kamado Tanjiro</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/bc/b6/da/bcb6da856eab798ad1ec6fb69c0f5934.jpg"
-                alt=""
-              />
-              <p class="name">Agatsuma Zenitsu</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/bc/b6/da/bcb6da856eab798ad1ec6fb69c0f5934.jpg"
+                  alt=""
+                />
+                <p class="name">Agatsuma Zenitsu</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/736x/ac/77/2c/ac772cd709336c8b9bcaf19bc280c293.jpg"
-                alt=""
-              />
-              <p class="name">Hashibira Inosuke</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/736x/ac/77/2c/ac772cd709336c8b9bcaf19bc280c293.jpg"
+                  alt=""
+                />
+                <p class="name">Hashibira Inosuke</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/79/b8/36/79b83677da06bf4f9f423ea2f6296440.jpg"
-                alt=""
-              />
-              <p class="name">Kamado Nezuko</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/79/b8/36/79b83677da06bf4f9f423ea2f6296440.jpg"
+                  alt=""
+                />
+                <p class="name">Kamado Nezuko</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/e1/e4/c1/e1e4c190372c94e4d5f90370818ad87c.jpg"
-                alt=""
-              />
-              <p class="name">Ubuyashiki Kagaya</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/e1/e4/c1/e1e4c190372c94e4d5f90370818ad87c.jpg"
+                  alt=""
+                />
+                <p class="name">Ubuyashiki Kagaya</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/736x/62/b2/f4/62b2f4e10222a7d8ec76d66e64330b68.jpg"
-                alt=""
-              />
-              <p class="name">Shinazugawa Genya</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/736x/62/b2/f4/62b2f4e10222a7d8ec76d66e64330b68.jpg"
+                  alt=""
+                />
+                <p class="name">Shinazugawa Genya</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/ea/d5/38/ead538db088c3c1db262169e2092bafc.jpg"
-                alt=""
-              />
-              <p class="name">Urokodaki Sakonji</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/ea/d5/38/ead538db088c3c1db262169e2092bafc.jpg"
+                  alt=""
+                />
+                <p class="name">Urokodaki Sakonji</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/ea/36/1c/ea361c28cc115918c14c17c971bdc893.jpg"
-                alt=""
-              />
-              <p class="name">Viêm Trụ – Rengoku Kyoujurou</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/ea/36/1c/ea361c28cc115918c14c17c971bdc893.jpg"
+                  alt=""
+                />
+                <p class="name">Viêm Trụ – Rengoku Kyoujurou</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/f4/b1/ff/f4b1ffc249dbe52d2e81b8bd9c1f3f56.jpg"
-                alt=""
-              />
-              <p class="name">Thủy Trụ – Tomioka Giyuu</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/f4/b1/ff/f4b1ffc249dbe52d2e81b8bd9c1f3f56.jpg"
+                  alt=""
+                />
+                <p class="name">Thủy Trụ – Tomioka Giyuu</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/736x/1b/b7/0b/1bb70b0bcac632a5fd76e204771c099b.jpg"
-                alt=""
-              />
-              <p class="name">Trùng Trụ – Kochou Shinobu</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/736x/1b/b7/0b/1bb70b0bcac632a5fd76e204771c099b.jpg"
+                  alt=""
+                />
+                <p class="name">Trùng Trụ – Kochou Shinobu</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/dc/0f/ec/dc0fecc93742671218e419ce01745494.jpg"
-                alt=""
-              />
-              <p class="name">Phong Trụ – Shinazugawa Sanemi</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/dc/0f/ec/dc0fecc93742671218e419ce01745494.jpg"
+                  alt=""
+                />
+                <p class="name">Phong Trụ – Shinazugawa Sanemi</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/736x/dc/44/24/dc4424048500f1d8c95ca52bdfad5ac7.jpg"
-                alt=""
-              />
-              <p class="name">Luyến Trụ – Kanroji Mitsuri</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/736x/dc/44/24/dc4424048500f1d8c95ca52bdfad5ac7.jpg"
+                  alt=""
+                />
+                <p class="name">Luyến Trụ – Kanroji Mitsuri</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/736x/83/94/d4/8394d4069aa9d94f620d8e948312b736.jpg"
-                alt=""
-              />
-              <p class="name">Nham Trụ – Himejima Gyoumei</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/736x/83/94/d4/8394d4069aa9d94f620d8e948312b736.jpg"
+                  alt=""
+                />
+                <p class="name">Nham Trụ – Himejima Gyoumei</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/2f/a4/1b/2fa41b85b3972d9005bfebfdfe62a4fa.jpg"
-                alt=""
-              />
-              <p class="name">Âm Trụ – Uzui Tengen</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/2f/a4/1b/2fa41b85b3972d9005bfebfdfe62a4fa.jpg"
+                  alt=""
+                />
+                <p class="name">Âm Trụ – Uzui Tengen</p>
+              </section>
 
-            <section class="main-good">
-              <img
-                src="https://i.pinimg.com/564x/9c/11/35/9c1135784caa16e247792d953460d959.jpg"
-                alt=""
-              />
-              <p class="name">Hà Trụ – Tokitou Muichirou</p>
-            </section>
+              <section class="main-good">
+                <img
+                  src="https://i.pinimg.com/564x/9c/11/35/9c1135784caa16e247792d953460d959.jpg"
+                  alt=""
+                />
+                <p class="name">Hà Trụ – Tokitou Muichirou</p>
+              </section>
+            </div>
           </div>
         </section>
 
         <!-- bad side -->
-        <section class="bad-side"></section>
+        <section class="bad-side">
+          <div class="coating">
+            <h3>2. Quỷ</h3>
+            <div class="main">
+              <!-- --- -->
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/c1/33/ff/c133ff1b87a5f987a56ffb13faf6d3c8.jpg"
+                  alt=""
+                />
+                <p class="name">Kibutsuji Muzan</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/7c/7f/94/7c7f943def97d89e7939f41bd2135e4e.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Nhất - Kokushibou</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/af/95/3c/af953c71a7d543af503cfec5dc9a249e.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Nhị - Douma</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/736x/53/0b/85/530b85b3e1220048dabbdeae9d2bb5c8.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Tam - Akaza</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/f6/04/c5/f604c5d83bc5aa3a93e84a36d8f623aa.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Tứ - Hantengu</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/0c/1c/a2/0c1ca2f69bd6f1a128fec50f5d49d7de.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Ngũ - Gyokko</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/564x/ef/9e/71/ef9e71ef153ce7c4ac62e2cedc88f19f.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Lục - Gyuutarou</p>
+              </section>
+
+              <section class="main-bad">
+                <img
+                  src="https://i.pinimg.com/736x/8b/15/0b/8b150bcf10bd17c1f804f50edb542ba3.jpg"
+                  alt=""
+                />
+                <p class="name">Thượng Lục - Daki</p>
+              </section>
+            </div>
+          </div>
+        </section>
       </div>
+
+      <!-- ----------------------------------------------- -->
+      <!-- stages -->
+      <div id="stages" class="stages">
+        <h2>- Các giai đoạn -</h2>
+
+        <!-- part 1 -->
+        <section class="part">
+          <h3>
+            • Tiểu phần 1: Huấn luyện và gia nhập Sát quỷ đội (chương 1-6):
+          </h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://www.icegif.com/wp-content/uploads/tanjiro-kamado-icegif-6.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou được Thủy trụ Tomioka Giyuu giới thiệu cho sư phụ
+              Urokodaki Sakonji để huấn luyện trở thành kiếm sĩ diệt quỷ. Sau
+              khi vượt qua kỳ thi tuyển chọn, cậu được trao thanh gươm đặc biệt
+              và gia nhập Sát quỷ đội, một tổ chức bí mật chuyên săn lùng và
+              tiêu diệt quỷ.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 2 -->
+        <section class="part">
+          <h3>• Tiểu phần 2: Nhiệm vụ đầu tiên (chương 7-11):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://64.media.tumblr.com/5a2987d0dfb990cdd222d479bfe605e8/a80b174a5e7c9737-37/s1280x1920/8f4db9bcfb3f931a6b1378729906f34ec6951c3a.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou nhận nhiệm vụ đầu tiên của mình là điều tra một ngôi làng
+              có người mất tích bí ẩn. Cậu phát hiện ra rằng người chịu trách
+              nhiệm là quỷ ăn thịt người Tamayo và trợ thủ Yushiro của cô. Tuy
+              nhiên, cậu cũng nhận ra rằng Tamayo và Yushiro là những quỷ có ý
+              thức và không muốn giết người. Họ còn giúp cậu tìm cách biến
+              Nezuko trở lại thành người bằng cách nghiên cứu máu của Chúa quỷ
+              Kibutsuji Muzan, kẻ đã biến họ thành quỷ.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 3 -->
+        <section class="part">
+          <h3>• Tiểu phần 3: Nhiệm vụ thứ hai (chương 12-17):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/0d/64/37/0d6437727e2bbd6cebcf3e20082355b0.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou nhận nhiệm vụ thứ hai là điều tra một ngôi làng có người
+              bị tấn công bởi quỷ. Cậu gặp và kết bạn với hai kiếm sĩ diệt quỷ
+              khác là Agatsuma Zenitsu và Hashibira Inosuke. Cùng nhau, họ đối
+              đầu với quỷ Người đàn ông bóng tối và quỷ Người đàn bà bóng tối,
+              hai trong số mười hai Nguyệt trụ, những quỷ cấp cao nhất dưới
+              trướng Muzan.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 4 -->
+        <section class="part">
+          <h3>• Tiểu phần 4: Chuyến tàu vô tận (chương 54-69):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/ec/29/43/ec29438d2d7dfc327ab24a2413d93c58.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou, Nezuko, Zenitsu và Inosuke được giao nhiệm vụ hợp tác
+              với Lửa trụ Rengoku Kyojuro để tiêu diệt quỷ trên một chuyến tàu
+              đêm. Họ phải đối mặt với quỷ Enmu, Nguyệt trụ thứ sáu, người có
+              khả năng điều khiển giấc mơ của người khác. Sau khi đánh bại Enmu,
+              họ còn phải chịu sự tấn công của quỷ Akaza, Nguyệt trụ thứ ba,
+              người có sức mạnh vượt trội hơn hẳn. Cuộc chiến kết thúc với cái
+              chết của Rengoku và sự thoát thân của Akaza.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 5 -->
+        <section class="part">
+          <h3>• Tiểu phần 5: Kỹ viện trấn (chương 70-99):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/87/5c/64/875c64ea8dfae30fceb78c561ecb1d83.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou và các đồng đội được chuyển đến Kỹ viện trấn, một nơi
+              dùng để chữa trị và huấn luyện các kiếm sĩ diệt quỷ. Tại đây, họ
+              gặp gỡ các trụ còn lại của Sát quỷ đội và được biết về bí mật của
+              thanh gươm và hơi thở. Họ cũng phải đối phó với một kẻ phản bội
+              trong Sát quỷ đội, là quỷ Kanroji Mitsuri, Nguyệt trụ thứ tư,
+              người đã gián tiếp gây ra cái chết của Rengoku.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 6 -->
+        <section class="part">
+          <h3>• Tiểu phần 6: Làng thợ rèn (chương 100-127):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/d2/d6/96/d2d6969db91d138f69393f7ffa43b3dd.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou và các đồng đội được gửi đến làng thợ rèn, nơi sản xuất
+              các thanh gươm cho Sát quỷ đội. Họ được giao nhiệm vụ bảo vệ làng
+              khỏi sự tấn công của quỷ. Họ phải đối đầu với quỷ Daki và quỷ
+              Gyutaro, Nguyệt trụ thứ sáu, hai anh em song sinh có khả năng kết
+              hợp với nhau. Họ cũng được sự giúp đỡ của Âm trụ Uzui Tengen,
+              người đã giả làm một thợ rèn để thâm nhập vào làng.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 7 -->
+        <section class="part">
+          <h3>• Tiểu phần 7: Đường đến làng rèn gươm (chương 128-137):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/5c/09/01/5c0901f1aedd8c1f444022c1d5d91d46.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou và các đồng đội được gửi đến một ngôi làng bí mật, nơi ẩn
+              chứa những bí mật về nguồn gốc của Sát quỷ đội và hơi thở. Họ được
+              tiếp đón bởi gia đình Kochou, những người có liên quan đến Gió trụ
+              Kochou Shinobu, người đã hy sinh trong cuộc chiến với quỷ. Họ cũng
+              được gặp lại hai kiếm sĩ diệt quỷ khác là Genya và Kanao, người đã
+              tham gia cuộc chiến ở Kỹ viện trấn. Họ được huấn luyện bởi Kochou
+              Kanae, chị gái của Shinobu, để nâng cao sức mạnh của mình.
+            </p>
+          </div>
+        </section>
+
+        <!-- part 8 -->
+        <section class="part">
+          <h3>• Tiểu phần 8: Trận chiến cuối cùng (chương 138-205):</h3>
+          <div class="content">
+            <img
+              class="col-1 col-xxl-1 col-xl-1"
+              src="https://i.pinimg.com/originals/92/43/3c/92433cc54d9af936f63d991f393c097b.gif"
+              alt=""
+            />
+            <p class="para col-2 col-xxl-2 col-xl-2">
+              Tanjirou và các đồng đội được gọi đến một căn cứ bí mật, nơi Muzan
+              và các Nguyệt trụ còn lại đang ẩn nấp. Họ cùng với các trụ khác
+              bắt đầu cuộc tấn công quyết định để tiêu diệt Muzan và giải cứu
+              loài người. Trong cuộc chiến, họ phải đối mặt với nhiều khó khăn
+              và hy sinh, cũng như những bí ẩn về quá khứ của Muzan và Sát quỷ
+              đoàn
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ----------------------------------------------- -->
+      <!-- fun-fact -->
+      <div id="fun-fact" class="fun-fact">
+        <h2>- Các sự thật thú vị -</h2>
+        <div class="coating">
+          <div class="content">
+            <p>
+              1. Inosuke từng cố ăn thịt quạ Kasugai của mình khoảng 18 lần - vì
+              lẽ đó mà con quạ rất ngại xuất hiện trước mặt cậu ta.
+            </p>
+            <p>
+              2. Theo Kokushibo thì Genya không phải người duy nhất ăn thịt quỷ.
+            </p>
+            <p>
+              3. Viêm Trụ Rengoku có thường nói to là vì thính giác kém - hậu
+              quả từ một lần anh tự hủy thính giác để đối đầu với một con quỷ.
+            </p>
+
+            <figure>
+              <img
+                src="https://cdn.oneesports.vn/cdn-data/sites/4/2023/06/Demon-Slayer-Inosuke-21-1024x576.jpg"
+                alt="Ten Anh"
+              />
+              <figcaption>Ảnh Inosuke đang cố bắt con quạ</figcaption>
+            </figure>
+
+            <p>4. Áo choàng của Luyến Trụ là do Viêm Trụ tặng.</p>
+            <p>
+              5. Mẹ của Tanjiro từng “thiết đầu công” bất tỉnh một con lợn. Trán
+              của Tanjiro cứng thế chắc cũng là do di truyền từ bà.
+            </p>
+            <p>
+              6. Rui tự làm mình yếu đi bằng cách tạo nên “gia đình”. Trên thực
+              tế thì rất có thể Rui mạnh hơn một Trụ Cột.
+            </p>
+
+            <p>
+              7. Sakonji có một gương mặt đặc biệt dịu dàng. Do hơi ngại nên ông
+              mới đeo mặt nạ để che nó đi.
+            </p>
+
+            <figure>
+              <img
+                src="https://genk.mediacdn.vn/2019/10/26/photo-1-15720571527341063382393.jpg"
+                alt="Ten Anh"
+              />
+              <figcaption>Cựu thủy trụ Sakonji</figcaption>
+            </figure>
+            <p>
+              8. Tanjiro có thói quen viết thư với những người có liên hệ với
+              mình, bao gồm Sakonji, Senjuro, các cô gái ở Kỹ Viện Trấn, Giyu và
+              Tengen. Hầu như ai cũng trả lời Tanjiro - trừ Giyu.
+            </p>
+            <p>
+              9. Gyoumei đánh mất thị lực do một cơn sốt cao khi ông còn nhỏ.
+            </p>
+            <p>
+              10. Nezuko rất giỏi oẳn tù tì và gần như bất bại. Tanjiro có lẽ
+              biết điều này, nhưng mỗi khi cần phân định thắng thua với em gái
+              thì cậu đều đồng ý chơi trò chơi này.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------- -->
+      <!-- review -->
+      <div class="review">
+        <h4>- Thanh gươm diệt quỷ - Đánh giá chung -</h4>
+        <p class="para">
+          "Thanh Gươm Diệt Quỷ" là một bộ manga/anime đầy ấn tượng và cuốn hút.
+          Cốt truyện xoay quanh cuộc phiêu lưu của Kamado Tanjiro, người trở
+          thành Thợ săn quỷ sau khi gia đình anh bị tấn công bởi quỷ. Điểm độc
+          đáo và phức tạp của nhân vật cùng với hành trình truy tìm sự trả thù
+          và cứu chữa em gái đã khiến bộ truyện này nổi bật. Hình ảnh và thiết
+          kế nghệ thuật đẹp mắt, đặc biệt là trong các trận chiến đầy kịch tính.
+          Sự đa dạng và sâu sắc của cốt truyện, kết hợp với âm nhạc và hình ảnh
+          xuất sắc, đã đưa "Thanh Gươm Diệt Quỷ" trở thành một hiện tượng và tận
+          hưởng sự thành công rực rỡ trên toàn thế giới.
+        </p>
+        <p class="para">
+          Bạn có thể theo dõi anime
+          <a
+            href="https://pops.vn/series/thanh-guom-diet-quy-demon-slayer-5f48e63e42243d00353e7c8a"
+            >Thanh Gươm Diệt Quỷ</a
+          >
+          bản phụ đề và lồng tiếng trọn bộ tại
+          <a
+            href="https://pops.vn/series/thanh-guom-diet-quy-demon-slayer-5f48e63e42243d00353e7c8a"
+            >đây</a
+          >
+          nha?
+        </p>
+        <span
+          ><a
+            href="https://pops.vn/series/thanh-guom-diet-quy-demon-slayer-5f48e63e42243d00353e7c8a"
+            >Click để xem phim ngay!</a
+          ></span
+        >
+      </div>
+
+      <!-- ----------------------------------------------- -->
+      <!-- footer -->
+      <footer>
+        <a class="ques" href="#">Bạn có câu hỏi? Liên hệ ngay với chúng tôi.</a>
+        <ul>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+          <li><a href="#">Quan hệ với nhà đầu tư</a></li>
+          <li><a href="#">Quyền riêng tư</a></li>
+          <li><a href="#">Kiểm tra tốc độ</a></li>
+          <li><a href="#">Trung tâm trợ giúp</a></li>
+          <li><a href="#">Việc làm</a></li>
+          <li><a href="#">Tùy chọn cookie</a></li>
+          <li><a href="#">Thông báo pháp lý</a></li>
+          <li><a href="#">Trung tâm đa phương tiện</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+          <li><a href="#">Các cách xem</a></li>
+          <li><a href="#">Thông tin doanh nghiệp</a></li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>
