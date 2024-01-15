@@ -760,34 +760,14 @@ footer ul li a {
   .intro .content {
     gap: 15px;
   }
-  .intro .content img {
-    width: 18%;
-  }
   .intro .content p {
-    font-size: 16px;
-    line-height: 15px;
+    max-width: 90%;
+    font-size: 0.8rem;
   }
 
   /* plot */
   .plot .para {
     line-height: 30px;
     font-size: 1rem;
-  }
-  /* main characters */
-  /* .main-characters .good-side .main .main-good,
-  .main-characters .bad-side .main .main-bad {
-    width: calc((100% / 1) - 5px);
-  } */
-}
-
-@media screen and (max-width: 435px) {
-  .intro .content p {
-    max-width: 70%;
-    font-size: 12px;
-  }
-  /* plot */
-  .plot h2 {
-    padding-bottom: 30px;
-    font-size: 1.5rem;
   }
 }
