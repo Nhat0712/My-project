@@ -485,6 +485,7 @@ html {
 .review span a {
   color: var(--text-color);
   text-decoration: none;
+  text-align: center;
 }
 
 .review span a:hover {
@@ -566,10 +567,8 @@ footer ul li a {
   }
   /* intro */
   .intro .content {
+    width: 55%;
     left: 50px;
-  }
-  .intro .content h1 {
-    font-size: 2.5rem;
   }
   .intro .content p {
     max-width: 70%;
@@ -617,9 +616,6 @@ footer ul li a {
   }
   .intro .content img {
     display: none;
-  }
-  .intro .content h1 {
-    font-size: 2rem;
   }
   .intro .content p {
     max-width: 50%;
@@ -675,24 +671,34 @@ footer ul li a {
   }
 
   /* intro */
-  .intro .content {
+  .intro {
+    background-color: black;
+    padding: 30px;
+  }
+  .intro .img-background {
     width: 100%;
+  }
+  .intro .content {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    left: 0;
     gap: 20px;
   }
-  .intro .content img {
-    width: 25%;
-  }
-  .intro .content h1 {
-    font-size: 1.8rem;
-  }
   .intro .content p {
-    line-height: 20px;
+    max-width: 80%;
   }
 
   /* plot */
-
-  .plot h2 {
-    padding-bottom: 40px;
+  /* -------------tổng hợp các tiêu đề nhỏ của các phần */
+  .plot h2,
+  .main-characters h2,
+  .stages h2,
+  .fun-fact h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .plot .sub-img {
     width: 40%;
@@ -707,6 +713,40 @@ footer ul li a {
     font-size: 1rem;
     font-weight: 400;
   }
+
+  /* stages */
+  .stages .part {
+    margin-bottom: 50px;
+  }
+
+  /* fin fact */
+  .fun-fact .content p {
+    margin-bottom: 10px;
+  }
+
+  .fun-fact .content figure img {
+    width: 80%;
+  }
+  .fun-fact .content figure figcaption {
+    font-size: 1rem;
+  }
+
+  /* review */
+  .review span {
+    width: 30%;
+  }
+  .review .para {
+    margin-bottom: 10px;
+  }
+
+  /* footer */
+  footer {
+    font-size: 0.8rem;
+  }
+
+  footer ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -718,10 +758,6 @@ footer ul li a {
   }
   .intro .content img {
     width: 18%;
-  }
-  .intro .content h1 {
-    max-width: 70%;
-    font-size: 1.3rem;
   }
   .intro .content p {
     font-size: 16px;
@@ -741,9 +777,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 435px) {
-  .intro .content h1 {
-    max-width: 80%;
-  }
   .intro .content p {
     max-width: 70%;
     font-size: 12px;
