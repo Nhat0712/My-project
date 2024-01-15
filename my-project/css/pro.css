@@ -657,7 +657,7 @@ footer ul li a {
     transform: translate(0);
   }
 
-  #parts:checked + .btn-bar + .parts {
+  #parts:checked .btn-bar .parts {
     display: flex;
   }
 
@@ -674,6 +674,9 @@ footer ul li a {
     width: 80px;
   }
 
+  .header-page .parts {
+    width: 60%;
+  }
   /* intro */
   .intro {
     background-color: black;
