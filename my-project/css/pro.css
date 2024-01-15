@@ -773,4 +773,8 @@ footer ul li a {
     line-height: 30px;
     font-size: 1rem;
   }
+  /* review */
+  .review span {
+    width: 45%;
+  }
 }
